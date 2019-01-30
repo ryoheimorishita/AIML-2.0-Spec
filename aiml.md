@@ -8,21 +8,23 @@ Richard S. Wallace<br>
 ALICE A.I. Foundation<br>
 Contact: info@alicebot.org
 
-## 1. Introduction
+## 1. はじめに
 
-This document is a draft specification for a new AIML (Artificial Intelligence
-Markup Language) standard, version 2.0 of the language.   AIML is an XML
-language for specifying the contents of a chat robot character.   An AIML
-Interpreter is a program capable of loading and running the bot, and providing
-the bot’s responses in a chat session with a human user, called the client.
- This document explains in detail both the syntax and semantics of AIML, as
-well as key features that should be supported by an AIML interpreter.
+本文章はAIML (Artificial Intelligence Markup Language) バージョン 2.0 の言語仕様です。
+AIMLはチャットボットの仕様を定義するためのXML言語です。
 
-The primary design goal of the original AIML language was simplicity.   AIML is
-motivated by two observations:
+AIMLインタプリタはボットをロードして実行できるプログラムです。
+そして、クライアントと呼ばれる人とのチャットに応答を返します。
 
-**1.** Creating an original, believable chatbot character requires writing a
-significant amount of content, in the form of conversational replies(*)
+本文章はAIMLインタプリタによってサポートされるべき主要な機能および、
+AIMLの文法と意味論の両方を詳細に説明します。
+
+元々のAIML言語の主な設計目標は単純さでした。
+
+AIMLは２つのobservationsから動機づけられます。
+
+**1.** オリジナルの、信頼できるチャットボットキャラクターを作成するには、
+会話形式で応答する形(*)で大量のコンテンツを書くことが重要です。
 
 > (*) - This proposition may not be true for chatbots based on other
 technologies.  AIML implements a form of supervised learning, where a person,
