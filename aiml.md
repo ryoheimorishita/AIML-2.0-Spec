@@ -46,24 +46,25 @@ AIMLが1990年代後半に最初に設計されたとき、ワールドワイド
 私は「ウェブサイトを作るのに十分なHTMLを知っている人なら誰でも、チャットボットを書くのに十分なAIMLを学ぶことができます。」
 と、言うのが好きでした。
 
-A parallel development beginning in the 1990’s was the development of XML,
-including specifications, standards, documents, tools, and applications for
-XML.  Perhaps the world has not gone the way that the XML evangelists hoped in
-the 1990’s, as its many competing formats remain viable today.  But XML has not
-gone away either.  It remains true that XML is a broadly supported standard,
-and its tag-based representation is easy to grasp without sophisticated
-knowledge of computer science.  AIML authors have found the many XML tools,
-such as DTDs, syntax checkers, and editors, to be useful when creating bots.  
-For these reasons AIML 2.0 remains hitched to the XML wagon.
+1990年代に始まった並行開発は、XMLの仕様、標準、文書、ツール、およびアプリケーションを含むXMLの開発でした。
+競合する多くのフォーマットが今日も存続しており、XMLの伝道者たちが1990年代に期待していたような
+道に世界はおそらく進んでいません。しかし、XMLもなくなっていません。
 
-At some level however, AIML does not depend on XML syntax.   There is a deeper
-representation of the data we represent in XML files.   As long as the
-representation can capture the basic structure of a pattern path (the input
-pattern, that pattern and topic pattern), and a hierarchical response template,
-then AIML could be written in a number of different formats, including Lisp
-S-expressions, JSON, or a structured text format.  The AIML 2.0 draft even
-includes an alternative representation: a hybrid of flat files and XML called
-AIML Intermediate Format (described in a section below).
+XMLが広くサポートされている標準であり、そのタグベースであることは事実です。
+表現は、コンピュータサイエンスに関する高度な知識がなくても簡単に把握できます。
+
+AIMLの作者は、DTD、構文チェッカー、エディタなど、ボットを作成するときに役立つ多くのXMLツールを見つけました。
+これらの理由から、AIML 2.0はXMLワゴンにとどまっています。
+
+ただし、あるレベルでは、AIMLはXML構文に依存しません。
+XMLファイルで表現したデータのより深い表現があります。
+
+表現がパターンパス（入力パターン、そのパターンとトピックパターン）の基本構造、
+および階層的な応答テンプレートを捉えることができる限り、AIMLはLisp S式、JSON、または構造化テキスト形式を
+含む多くの異なるフォーマットで書くことができます。 
+
+AIML 2.0ドラフトには別の表現も含まれています。:
+フラットファイルとXMLのハイブリッドで、AIML中間フォーマット（以下のセクションで説明されています）と呼ばれます。
 
 Modifying AIML inevitably reduces some of its original simplicity.   Adding
 more tags and more features make the language more difficult for people to
