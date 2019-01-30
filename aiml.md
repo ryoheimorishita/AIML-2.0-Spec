@@ -42,6 +42,7 @@ AIMLが1990年代後半に最初に設計されたとき、ワールドワイド
 活動のこの津波は実際に今日まで続いています。しかし、何が変わったのかというと、Webは元々の単純さを失ったということです。
 おそらく、ユーザーがWebを通じてますます高度なサービスを要求し、複雑なレイヤーを追加することが避けられなかったのかもしれません。
 1994年には、作者にいくつかのHTMLタグに関する基本的な知識しかなくてもWebサイトを作成することができました。
+
 当時、多くのクリエイティブな人々が当時の単純なHTMLを習得していたので、私は同じように単純なAIMLを作成することにしました。
 私は「ウェブサイトを作るのに十分なHTMLを知っている人なら誰でも、チャットボットを書くのに十分なAIMLを学ぶことができます。」
 と、言うのが好きでした。
@@ -49,30 +50,27 @@ AIMLが1990年代後半に最初に設計されたとき、ワールドワイド
 1990年代に始まった並行開発は、XMLの仕様、標準、文書、ツール、およびアプリケーションを含むXMLの開発でした。
 競合する多くのフォーマットが今日も存続しており、XMLの伝道者たちが1990年代に期待していたような
 道に世界はおそらく進んでいません。しかし、XMLもなくなっていません。
-
 XMLが広くサポートされている標準であり、そのタグベースであることは事実です。
 表現は、コンピュータサイエンスに関する高度な知識がなくても簡単に把握できます。
-
 AIMLの作者は、DTD、構文チェッカー、エディタなど、ボットを作成するときに役立つ多くのXMLツールを見つけました。
 これらの理由から、AIML 2.0はXMLワゴンにとどまっています。
 
 ただし、あるレベルでは、AIMLはXML構文に依存しません。
 XMLファイルで表現したデータのより深い表現があります。
-
 表現がパターンパス（入力パターン、そのパターンとトピックパターン）の基本構造、
 および階層的な応答テンプレートを捉えることができる限り、AIMLはLisp S式、JSON、または構造化テキスト形式を
 含む多くの異なるフォーマットで書くことができます。 
-
 AIML 2.0ドラフトには別の表現も含まれています。:
 フラットファイルとXMLのハイブリッドで、AIML中間フォーマット（以下のセクションで説明されています）と呼ばれます。
 
-Modifying AIML inevitably reduces some of its original simplicity.   Adding
-more tags and more features make the language more difficult for people to
-understand.   The urge to keep it as simple as possible is tempered by our
-experience over the past decade, in which AIML botmasters learned that the
-language had some serious limitations.   AIML 2.0 is an attempt to address the
-shortcomings, while balancing the original goal of keeping the language as
-simple as possible.   This AIML 2.0 draft specification is, for the most part,
+AIMLを変更すると、必然的にその元々の単純さの一部が低下します。
+タグや機能を追加すると、言語が理解しにくくなります。
+AIMLのボットマスターが言語に重大な制限があることを学んだ過去10年間の経験によって、
+可能な限り単純にすることを強く望んでいます。
+AIML 2.0は、可能な限り単純な言語を使用するという当初の目標とのバランスを取りながら、欠点を解決するための試みです。
+このAIML 2.0ドラフト仕様は、大部分は、AIML 1.0以前の標準との下位互換性を保つように設計されているため、元の言語の単純さが維持されます。
+
+This AIML 2.0 draft specification is, for the most part,
 designed to be backwards-compatible with the AIML 1.0 and earlier standards, in
 that way preserving the simplicity of the original language.   What’s new are
 some new features that build on top of the original language in such a way that
