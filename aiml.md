@@ -12,51 +12,39 @@ Contact: info@alicebot.org
 
 本文章はAIML (Artificial Intelligence Markup Language) バージョン 2.0 の言語仕様です。
 AIMLはチャットボットの仕様を定義するためのXML言語です。
-
 AIMLインタプリタはボットをロードして実行できるプログラムです。
 そして、クライアントと呼ばれる人とのチャットに応答を返します。
-
 本文章はAIMLインタプリタによってサポートされるべき主要な機能および、
 AIMLの文法と意味論の両方を詳細に説明します。
-
 元々のAIML言語の主な設計目標は単純さでした。
-
 AIMLは２つのobservationsから動機づけられます。
 
 **1.** オリジナルの、信頼できるチャットボットキャラクターを作成するには、
 会話形式で応答する形(*)で大量のコンテンツを書くことが重要です。
 
-> (*) - This proposition may not be true for chatbots based on other
-technologies.  AIML implements a form of supervised learning, where a person,
-the botmaster, plays a crucial role in training the bot.   Unsupervised
-learning systems, on the other hand, attempt to teach a bot through
-conversations, in effect crowdsourcing the bot content.   The unsupervised
-model has its own drawbacks however.  Specifically, the bot database becomes
-filled with nonsense, which then an editor must later delete.  The tradeoff
-between supervised and unsupervised methods might be summarized as “Creative
-writing vs. deleting garbage."
+> (*) - この命題は他の技術に基づくチャットボットには当てはまりません。 
+AIMLは、監督された学習の形式を実行します。ボットマスターは、ボットのトレーニングに重要な役割を果たします。
+一方、教師なし学習システムは、会話を通じてボットを教えることを試み、事実上ボットコンテンツをクラウドソーシングします。
+ただし、この教師なしモデルには独自の欠点があります。
+具体的には、ボットデータベースはナンセンスでいっぱいになり、それを編集者は後で削除する必要があります。
+教師付き手法と教師なし手法の間のトレードオフは、
+"ゴミを書くこと対、削除すること"のように要約されます。
 
-**2.** The people who are most suited to writing the bot content are not, by in
-large, computer programmers.   Those with literary backgrounds are more skilled
-at developing content for original characters(*).
+**2.** ボットコンテンツを書くのに最も適している人々は、多くの場合、コンピュータープログラマー
+ではありません。オリジナルキャラクター(*)のためのコンテンツを開発するのに熟練し、文学的背景を持っている人々です。
 
-> (*) The caveat to this observation is that there are of course, some talented
-people who have mastered both computer programming and the literary skill to
-write quality chatbot content.
+>（*）この観察に対する注意点は、もちろん、コンピュータプログラミングと
+文学的スキルの両方を習得したことがある質の高いチャットボットコンテンツを書く才能のある
+人がいるということです。
 
-When AIML was first designed in the late 1990’s, the World Wide Web had burst
-upon the stage and a rush of creative energy was poured into building websites.
- This tsunami of activity has in fact continued to this day.  What has changed
-however is that the web lost its original simplicity.  Perhaps it was
-inevitable as users demanded more and more sophisticated services through the
-web, that layers of complexity would be added.   In 1994 however it was
-possible to author a web site with only rudimentary knowledge of a few HTML
-tags.  
-
-Because at that time, a number of creative people had mastered the then-simple
-HTML, I made a decision to create an equally simple AIML.   I was fond of
-saying, “anyone who knows enough HTML to make a website, can learn enough AIML
-to write a chatbot."  
+AIMLが1990年代後半に最初に設計されたとき、ワールドワイドウェブはステージ上で破裂し、
+創造的なエネルギーの急増はウェブサイトの構築に注がれました。
+活動のこの津波は実際に今日まで続いています。しかし、何が変わったのかというと、Webは元々の単純さを失ったということです。
+おそらく、ユーザーがWebを通じてますます高度なサービスを要求し、複雑なレイヤーを追加することが避けられなかったのかもしれません。
+1994年には、作者にいくつかのHTMLタグに関する基本的な知識しかなくてもWebサイトを作成することができました。
+当時、多くのクリエイティブな人々が当時の単純なHTMLを習得していたので、私は同じように単純なAIMLを作成することにしました。
+私は「ウェブサイトを作るのに十分なHTMLを知っている人なら誰でも、チャットボットを書くのに十分なAIMLを学ぶことができます。」
+と、言うのが好きでした。
 
 A parallel development beginning in the 1990’s was the development of XML,
 including specifications, standards, documents, tools, and applications for
