@@ -70,23 +70,19 @@ AIMLのボットマスターが言語に重大な制限があることを学ん�
 AIML 2.0は、可能な限り単純な言語を使用するという当初の目標とのバランスを取りながら、欠点を解決するための試みです。
 このAIML 2.0ドラフト仕様は、大部分は、AIML 1.0以前の標準との下位互換性を保つように設計されているため、元の言語の単純さが維持されます。
 
-This AIML 2.0 draft specification is, for the most part,
-designed to be backwards-compatible with the AIML 1.0 and earlier standards, in
-that way preserving the simplicity of the original language.   What’s new are
-some new features that build on top of the original language in such a way that
-the concepts can be pedagogically organized so that AIML can be taught in
-beginner, intermediate and advanced levels.
+このAIML 2.0ドラフト仕様は、ほとんどの部分で、AIML 1.0以前の標準と下位互換性があるように設計されているため、元の言語の単純さが保たれています。
+新機能は、概念を教育的に理解できるように、元の言語の上に構築されたいくつかの新機能です。AIMLを初級、中級、上級レベルで教えることができるように構成されています。
 
-### What’s new in AIML 2.0?
 
-  *  Zero+ wildcards: new wildcards that match 0 or more words.
-  *  Highest priority matching: select certain words to have top matching
-    priority
-  *  Migrating from attributes to tags: more dynamic control of attribute values
-  *  AIML Sets: match inputs with sets of words and phrases
-  *  AIML Maps: map set elements to members of other sets
-  *  Loops: Iterations
-  *  Local variables: variables with scope limited to one category.
+### AIML 2.0 の新情報
+
+  *  Zero+ wildcards: 0個以上の単語に一致する新しいワイルドカードです
+  *  Highest priority matching: 最も一致する優先順位を持つように特定の単語を選択します
+  *  Migrating from attributes to tags: 属性値のより動的に制御します
+  *  AIML Sets: 入力を単語やフレーズのセットと照合します
+  *  AIML Maps: セット要素を他のセットのメンバーにマップします
+  *  Loops: 繰り返しです
+  *  Local variables: variables with scope limited to one category.
   *  Sraix: access external web services and other Pandorabots
   *  Denormalization: the (approximate) inverse of normalization.
   *  Pandorabots extensions
