@@ -82,9 +82,9 @@ AIML 2.0は、可能な限り単純な言語を使用するという当初の目
   *  AIML Sets: 入力を単語やフレーズのセットと照合します
   *  AIML Maps: セット要素を他のセットのメンバーにマップします
   *  Loops: 繰り返しです
-  *  Local variables: variables with scope limited to one category.
-  *  Sraix: access external web services and other Pandorabots
-  *  Denormalization: the (approximate) inverse of normalization.
+  *  Local variables: 範囲が1つのカテゴリに限定された変数
+  *  Sraix: 外部のWebサービスや他のPandorabotsにアクセスする
+  *  Denormalization: 正規化の（近似）逆数
   *  Pandorabots extensions
       *  date: formatted date and time
       *  request: access previous input request history.
