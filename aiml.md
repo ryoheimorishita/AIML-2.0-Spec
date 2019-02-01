@@ -82,20 +82,20 @@ AIML 2.0は、可能な限り単純な言語を使用するという当初の目
   *  AIML Sets: 入力を単語やフレーズのセットと照合します
   *  AIML Maps: セット要素を他のセットのメンバーにマップします
   *  Loops: 繰り返しです
-  *  Local variables: 範囲が1つのカテゴリに限定された変数
-  *  Sraix: 外部のWebサービスや他のPandorabotsにアクセスする
-  *  Denormalization: 正規化の（近似）逆数
+  *  Local variables: 範囲が1つのカテゴリに限定された変数です
+  *  Sraix: 外部のWebサービスや他のPandorabotsにアクセスします
+  *  Denormalization: 正規化の（近似）逆数です
   *  Pandorabots extensions
-      *  date: formatted date and time
-      *  request: access previous input request history.
-      *  response: access previous bot response history
-      *  unbound predicates: check if a predicate has been set or not
-      *  learn: learn new AIML categories
-      *  learnf: learn new AIML categories and save in a file
-      *  explode: split words and phrases into individual character
+      *  date: フォーマットされた日時
+      *  request: 前の入力要求履歴にアクセスします
+      *  response: 以前のボットレスポンス履歴にアクセスします
+      *  unbound predicates: 述語が設定されているかどうかを調べます
+      *  learn: 新しいAIMLカテゴリを学習します
+      *  learnf: 新しいAIMLカテゴリを学習してファイルに保存します
+      *  explode: 単語やフレーズを個々の文字に分割します
 
-  *  OOB (Out of Band) Tags: AIML extension for mobile device control
-
+  *  OOB (Out of Band) Tags: モバイルデバイス制御用のAIML拡張です
+ 
 ### What’s gone from AIML 1.0?
 
   *  Gossip - never well defined anyway
