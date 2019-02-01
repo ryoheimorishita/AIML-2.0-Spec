@@ -119,12 +119,13 @@ AIML標準では、ボット、ボットマスター、またはクライアン�
 
 **AIML Files** -- 各ボットはそれ自身のAIMLファイルのセットを持っていると仮定されます。
 このAIMLファイルの集まりは、ボットキャラクターの性格を独自に定義します。
-  A bot may be a clone of another bot, or may connect to another bot through
-<sraix> (defined below) but for the purpose of defining the AIML language, the
-simple assumption is that each bot has its own AIML files.
-
-**Learnf file** -- one AIML file with special meaning is the file created by the
-<learnf> tag (defined below).  When an AIML template activates a <learnf> tag,
+ ボットは別のボットのクローンであるか、または別のボットに接続することができます。
+<sraix>（下記に定義）がAIML言語を定義する目的のために、単純な仮定は各ボットがそれ自身のAIMLファイルを持っているということです。
+ 
+**Learnf file** -- 特別な意味を持つAIMLファイルの1つは、<learnf>タグ（下記で定義）によって作成されたファイルです。
+ AIMLテンプレートが<learnf>タグをアクティブにすると、ボットは、特に、例えばlearnf.aimlのようなインタプリタによって特定の名前が付けられたファイルにそれを保存することによって新しいカテゴリを覚えているか、または「学習」します。
+ 
+ When an AIML template activates a <learnf> tag,
 the bot remembers or “learns" the new category, specially, by saving it in a
 file given a specific name by the interpreter (for example, learnf.aiml).   The
 new categories learned with <learnf> are global to all clients chatting with
