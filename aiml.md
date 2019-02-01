@@ -96,26 +96,24 @@ AIML 2.0は、可能な限り単純な言語を使用するという当初の目
 
   *  OOB (Out of Band) Tags: モバイルデバイス制御用のAIML拡張です
  
-### What’s gone from AIML 1.0?
+### AIML 1.0 からの変更点
 
-  *  Gossip - never well defined anyway
-  *  Javascript - The interpreter does not have to support a scripting language
-    (to be restored in AIML 2.1).
+  *  Gossip - とにかくうまく定義されていない
+  *  Javascript - インタプリタはスクリプト言語をサポートする必要はありません。
+    (AIML 2.1でで復元される予定).
 
 ## 2. AIML System overview
 
-AIML defines a relationship between three entities: a human chatter called the
-client, a human chat bot author called the botmaster, and the robot or bot
-itself.  In general a botmaster can author multiple bots, and each bot can have
-multiple clients.   A system like Pandorabots provides for multiple botmasters,
-multiple bots, and multiple clients.   An AIML system embedded in a consumer
-device might have only one bot and one client.   The AIML standard does not
-specify the number of bots, botmasters or clients (except that defining AIML
-means we have to talk about at least one of each).  The details of handling
-multiple bots, botmasters and clients is left up to the implementation.  
-
-Care should be taken however to manage the state of each bot and each client
-session.
+AIMLは、クライアントと呼ばれるチャットする人、ボットマスターと呼ばれるチャットボットの
+作成者、およびロボットまたはボット自体という3つのエンティティ間の関係を定義します。
+一般に、ボットマスターは複数のボットを作成でき、各ボットは複数のクライアントを持つ
+ことができます。
+Pandorabotsのようなシステムは、複数のボットマスター、複数のボット、そして複数のクライアントを提供します。
+コンシューマデバイスに組み込まれたAIMLシステムには、ボットが1つとクライアントが1つしかない場合があります。
+AIML標準では、ボット、ボットマスター、またはクライアントの数は指定されていません（ただし、AIMLを定義する
+ということは、それぞれ少なくとも1つについて説明する必要があるという意味です）。
+複数のボット、ボットマスター、およびクライアントの処理の詳細は実装に任されています。
+ただし、各ボットと各クライアントセッションの状態を管理するように注意する必要があります。
 
 **A. Bot configuration and state:**
 
