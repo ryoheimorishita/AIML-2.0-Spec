@@ -115,10 +115,10 @@ AIML標準では、ボット、ボットマスター、またはクライアン�
 複数のボット、ボットマスター、およびクライアントの処理の詳細は実装に任されています。
 ただし、各ボットと各クライアントセッションの状態を管理するように注意する必要があります。
 
-**A. Bot configuration and state:**
+**A. ボット構成と状態:**
 
-**AIML Files** -- Each bot is assumed to have its own set of AIML files.  This
-collection of AIML files uniquely defines the personality of the bot character.
+**AIML Files** -- 各ボットはそれ自身のAIMLファイルのセットを持っていると仮定されます。
+このAIMLファイルの集まりは、ボットキャラクターの性格を独自に定義します。
   A bot may be a clone of another bot, or may connect to another bot through
 <sraix> (defined below) but for the purpose of defining the AIML language, the
 simple assumption is that each bot has its own AIML files.
