@@ -135,14 +135,13 @@ AIML標準では、ボット、ボットマスター、またはクライアン�
 多くのボットが同じ代用品のコピーを使用することがありますが、マルチボットシステムは
 各ボットがそれ自身のカスタム代用品を持つことができることを保証するべきです。
 
-**Predicate defaults** - Predicate values in AIML are like local variables specific
-to one client.  Typically one thinks of client profile information like name,
-age and gender predicates, but predicates can be used to store any string.
- AIML predicates are set with the <set name="predicate"> tag and retrieved with
-the <get name="predicate"/> tag.  Predicates are specific to an individual
-client, but the predicates may have default values that are defined for a
-specific bot.  There should also be a global predicate default for any
-predicate whose default value is not specified for a bot.
+**Predicate defaults** - 
+AIMLの述語値は、1人のクライアントに固有のローカル変数のようなものです。
+通常、名前、年齢、性別の述語などのクライアントプロファイル情報が考えられますが、
+任意の文字列を格納できます。
+AIML述語は<set name = "predicate">タグで設定され、<get name = "predicate" />タグで取得されます。
+述語は個々のクライアントに固有ですが、述語は特定のボットに対して定義されているデフォルト値を持つことができます。
+デフォルト値がボットに指定されていない述部には、グローバル述部のデフォルトもあります。
 
 **Sets and Maps** - AIML 2.0 includes a feature that implements sets (collections)
 and maps.  The sets members are strings and the maps define a mapping from
