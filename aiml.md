@@ -124,21 +124,16 @@ AIML標準では、ボット、ボットマスター、またはクライアン�
  
 **Learnf file** -- 特別な意味を持つAIMLファイルの1つは、<learnf>タグ（下記で定義）によって作成されたファイルです。
  AIMLテンプレートが<learnf>タグをアクティブにすると、ボットは、特に、例えばlearnf.aimlのようなインタプリタによって特定の名前が付けられたファイルにそれを保存することによって新しいカテゴリを覚えているか、または「学習」します。
+<learnf>で学習した新しいカテゴリは、チャットしているすべてのクライアントにとってグローバルです。
+つまり、learnfファイルはボットのAIMLファイルコレクションの一部になるはずです。
  
- When an AIML template activates a <learnf> tag,
-the bot remembers or “learns" the new category, specially, by saving it in a
-file given a specific name by the interpreter (for example, learnf.aiml).   The
-new categories learned with <learnf> are global to all clients chatting with
-the bot, so the learnf file should be part of the bot’s AIML file collection.
+**Bot properties** --  <bot name="name"/> や <bot name=”species"/>など、ボットのグローバル値.
+ マルチボットシステムでは、ボットのプロパティを個々に、そして各ボットに対して個別に管理するように注意する必要があります。
 
-**Bot properties** -- global values for a bot, such as <bot name="name"/> or <bot
-name=”species"/>.  A multiple bot system should take care to maintain bot
-properties individually and separately for each bot.
-
-**Substitutions** -- normalizing substitutions, person substitutions, gender
-substitutions and sentence splitters are unique to each bot.   Many bots may
-use copies of the same substitutions, but a multiple-bot system should ensure
-that each bot can have its own custom substitutions.
+**Substitutions** -- 
+正規化置換、人物置換、性別置換、およびセンテンススプリッタは、各ボットに固有のものです。
+多くのボットが同じ代用品のコピーを使用することがありますが、マルチボットシステムは
+各ボットがそれ自身のカスタム代用品を持つことができることを保証するべきです。
 
 **Predicate defaults** - Predicate values in AIML are like local variables specific
 to one client.  Typically one thinks of client profile information like name,
