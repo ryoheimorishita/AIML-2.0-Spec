@@ -143,17 +143,14 @@ AIML述語は<set name = "predicate">タグで設定され、<get name = "predic
 述語は個々のクライアントに固有ですが、述語は特定のボットに対して定義されているデフォルト値を持つことができます。
 デフォルト値がボットに指定されていない述部には、グローバル述部のデフォルトもあります。
 
-**Sets and Maps** - AIML 2.0 includes a feature that implements sets (collections)
-and maps.  The sets members are strings and the maps define a mapping from
-string to string.    Unique collections of Sets and Maps may be defined for
-each bot.
-
-The AIML standard does not specify where or how the properties, sets, maps,
-substitutions and predicates are defined.  This is an implementation detail
-left up to the interpreter designer.   The values could be entered through a
-user interface, saved in text files or a database, or in any other format
-including XML and JSON, as long as the interpreter can read them when the bot
-is launched.
+**Sets and Maps** - 
+AIML 2.0には、セット（コレクション）とマップを実装する機能が含まれています。
+セットメンバーは文字列で、マップは文字列から文字列へのマッピングを定義します。
+セットとマップの一意のコレクションは、各ボットに対して定義できます。
+AIML規格では、プロパティ、セット、マップ、置換、述語はどこでどのように定義されているかは規定されていません。
+インタプリタ設計者に実装詳細は任されています。
+ボットが起動したときに、インタプリタがその値を読むことさえできれば、UIから入力されてもよいし、
+テキストファイルやDBやその他のXMLやJSONフォーマットで保存された値でもよいです。
 
 **B. Client session and state**
 
