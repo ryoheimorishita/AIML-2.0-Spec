@@ -152,7 +152,7 @@ AIML規格では、プロパティ、セット、マップ、置換、述語は�
 ボットが起動したときに、インタプリタがその値を読むことさえできれば、UIから入力されてもよいし、
 テキストファイルやDBやその他のXMLやJSONフォーマットで保存された値でもよいです。
 
-**B. クライアントセッションと状態 **
+**B. クライアントセッションと状態**
 
 **初期化** -- クライアントがボットに接続すると、チャットを開始する前に、ボットは
 クライアントセッションを初期化する必要があります。
@@ -162,10 +162,9 @@ AIMLインタプリタが会話の状態を追跡できるように、クライ�
 **述語のデフォルト** -- 
 初期化ステップには、ボットのために、述部の指定されたデフォルト値を設定することも含まれます。
 
-**述語の状態** -- The chat session must keep track of the state of predicate
-values.   Whenever a client activates an AIML category, potentially the <set>
-tag is some predicate values may change.   The interpreter must remember the
-predicate values through the course of the conversation.
+**述語の状態** -- チャットセッションは述語値の状態を追跡しなければなりません。
+クライアントがAIMLカテゴリをアクティブにするときはいつでも、潜在的に<set>タグはいくつかの述語値が変わる可能性があります。
+インタプリタは会話の過程を通して述語の値を覚えていなければなりません。
 
 **Topic** - The AIML topic is a unique predicate value, because it becomes part of
 the pattern matching process.   The topic can be set with <set name="topic">
