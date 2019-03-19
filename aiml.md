@@ -152,18 +152,17 @@ AIML規格では、プロパティ、セット、マップ、置換、述語は�
 ボットが起動したときに、インタプリタがその値を読むことさえできれば、UIから入力されてもよいし、
 テキストファイルやDBやその他のXMLやJSONフォーマットで保存された値でもよいです。
 
-**B. Client session and state**
+**B. クライアントセッションと状態 **
 
-**Initialization** -- when a client connects to a bot, before they begin chatting,
-the bot must initialize a client session.   The client session is assigned a
-unique ID so that the AIML interpreter can track the state of the conversation.
-  This is important when a single bot is chatting with multiple clients, for
-example a web based bot.
+**初期化** -- クライアントがボットに接続すると、チャットを開始する前に、ボットは
+クライアントセッションを初期化する必要があります。
+AIMLインタプリタが会話の状態を追跡できるように、クライアントセッションには一意のIDが割り当てられています。
+これは、Webベースのボットなど、1つのボットが複数のクライアントとチャットしているときに重要です。
 
-**Predicate defaults** -- Initialization step also includes setting predicates to
-the default values specified for the bot.
+**述語のデフォルト** -- 
+初期化ステップには、ボットのために、述部の指定されたデフォルト値を設定することも含まれます。
 
-**Predicate state** -- The chat session must keep track of the state of predicate
+**述語の状態** -- The chat session must keep track of the state of predicate
 values.   Whenever a client activates an AIML category, potentially the <set>
 tag is some predicate values may change.   The interpreter must remember the
 predicate values through the course of the conversation.
